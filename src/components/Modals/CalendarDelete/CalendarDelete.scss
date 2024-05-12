@@ -1,0 +1,39 @@
+.calendar {
+    &__modal {
+        @apply w-full max-w-md max-h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    }
+
+    &__shadow {
+        @apply relative bg-white rounded-lg shadow;
+    }
+
+    &__x {
+        @apply absolute top-2 right-2 text-gray-400 bg-transparent;
+
+        &-icon {
+            @apply text-red-500 hover:text-red-700;
+        }
+    }
+
+    &__content {
+        @apply p-6 text-center flex flex-col justify-between items-center py-8;
+
+        &-question {
+            @apply mb-5 text-lg font-normal text-gray-600;
+        }
+
+        &-answer {
+            @apply flex;
+        }
+    }
+
+    &__button {
+        &-no {
+            @apply bg-slate-300 hover:bg-slate-400 text-white font-bold py-2 px-6 rounded focus:outline-none;
+        }
+
+        &-yes {
+            @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded focus:outline-none ml-2;
+        }
+    }
+}

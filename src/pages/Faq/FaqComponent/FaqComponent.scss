@@ -1,0 +1,15 @@
+.faq {
+    @apply border border-red-300 w-1/2 mb-4;
+
+    &__question {
+        @apply flex justify-between items-center pb-4 border border-red-300 px-8 py-6;
+
+        &-arrow {
+            @apply cursor-pointer hover:bg-red-50 p-1 rounded-full transition-all;
+        }
+    }
+
+    &__answer {
+        @apply border border-red-300 px-8 py-6 leading-5;
+    }
+}

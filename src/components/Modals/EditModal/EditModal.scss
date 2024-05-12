@@ -1,0 +1,21 @@
+#modal {
+    &__typography {
+        @apply font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer;
+    }
+
+    &__box {
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    }
+
+    &__button {
+        @apply flex justify-center pt-2;
+
+        &-close {
+            @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none;
+        }
+
+        &-edit {
+            @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none ml-4;
+        }
+    }
+}

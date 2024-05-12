@@ -1,0 +1,47 @@
+.form {
+    @apply w-[450px] bg-white shadow-md rounded pt-8 px-8 pb-8 mb-4;
+
+    &__div {
+        @apply mb-4;
+    }
+
+    &__label {
+        @apply block text-gray-700 text-sm font-bold mb-2;
+    }
+
+    &__input {
+        @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+    }
+
+    &__div-button {
+        @apply flex flex-col items-center justify-between;
+    }
+
+    &__button {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none;
+    }
+
+    &__p {
+        @apply mt-4;
+    }
+
+    &__link {
+        @apply pl-1 inline-block align-baseline font-bold text-blue-500 hover:text-blue-800;
+    }
+
+    &__password {
+        @apply relative;
+
+        &-eye {
+            @apply absolute right-2.5 top-2.5 cursor-pointer;
+        }
+    }
+
+    &__field {
+        @apply border border-slate-300 py-1 px-2 mt-2 first:mt-0;
+    }   
+}
+
+#btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}

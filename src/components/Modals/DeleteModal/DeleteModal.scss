@@ -1,0 +1,26 @@
+#modal {
+    &__typography {
+        &-delete {
+            @apply font-medium text-red-600 hover:underline cursor-pointer;
+        }
+    }
+
+    &__box-content {
+            @apply bg-white flex flex-col justify-evenly items-center w-[450px] h-[250px];
+
+            &__button {
+                @apply space-x-3;
+
+                &-no {
+                    @apply bg-slate-300 hover:bg-slate-400 text-white font-bold py-2 px-6 rounded focus:outline-none;
+                }
+
+                &-yes {
+                    @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded focus:outline-none;
+                }
+            }
+        }
+
+        
+    
+}

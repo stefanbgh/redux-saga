@@ -1,0 +1,19 @@
+.sidebar {
+    @apply flex flex-col justify-center items-center h-full;
+
+    &__position {
+        @apply flex flex-col justify-between h-4/5 w-3/4;
+    }
+
+    &__profile {
+        @apply flex border border-slate-300 px-8 py-1 rounded-full;
+    }
+
+    &__element {
+        @apply flex items-center border border-red-300 px-8 py-4 rounded-xl;
+
+        &-title {
+            @apply pl-2;
+        }
+    }
+}
